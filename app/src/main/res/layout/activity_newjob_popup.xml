@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.postjob.newjobPopup">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="482dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Addjob"
+                android:layout_width="315dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="Add New Job"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/newdescription"
+                android:layout_width="147dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="Description" />
+
+            <EditText
+                android:id="@+id/editnewdescription"
+                android:layout_width="303dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:ems="10"
+                android:hint="add job description"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/newjobtype"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="Job type" />
+
+
+            <EditText
+                android:id="@+id/editnewjobtype"
+                android:layout_width="313dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:ems="10"
+                android:hint="add job type"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/newrequirements"
+                android:layout_width="144dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="Additional Requirements" />
+
+            <EditText
+                android:id="@+id/editnewrequirements"
+                android:layout_width="304dp"
+                android:layout_height="72dp"
+                android:layout_marginStart="20dp"
+                android:ems="10"
+                android:hint="Insert additional requirements"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/Canceljob"
+                android:layout_width="154dp"
+                android:layout_height="55dp"
+
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="Cancel" />
+
+            <Button
+                android:id="@+id/addJob"
+                android:layout_width="159dp"
+                android:layout_height="55dp"
+
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="Add" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
